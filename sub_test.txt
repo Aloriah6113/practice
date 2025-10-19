@@ -1,15 +1,17 @@
 import random
 
 def sub_test():
-    a = random.randint(1, 10)
-    b = random.randint(1, 10)
-    c = a - b
-    print(f"{a} - {b} = , end='')
-    ans = int(input())
+    while True:
+        a = random.randint(1, 10)
+        b = random.randint(1, 10)
+        c = a - b
+        print(f"{a} - {b} = , end='')
+        ans = int(input())
 
-    if ans == c:
-        printf("정답입니다.")
-    else:
-        print("오답입니다.")
+        if ans == c:
+            printf("정답입니다.")
+            break
+        else:
+            print("오답입니다.")
 
 sub_test()
